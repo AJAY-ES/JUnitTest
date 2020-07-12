@@ -5,6 +5,9 @@ import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite;
+import org.junit.runners.Suite.SuiteClasses;
 
 /**
  * 
@@ -14,14 +17,15 @@ import org.junit.Test;
  * @author ajayrahul
  *
  */
-public class TestCase {
+@RunWith(Suite.class)
+@SuiteClasses({TestCase1.class,TestCase2.class})
+public class JUnitSuite {
 
 	/**
 	 * @throws java.lang.Exception
 	 */
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
-		System.out.println("setUpBeforeClass");
 	}
 
 	/**
@@ -29,8 +33,6 @@ public class TestCase {
 	 */
 	@AfterClass
 	public static void tearDownAfterClass() throws Exception {
-		System.out.println("tearDownAfterClass");
-	 
 	}
 
 	/**
@@ -38,7 +40,6 @@ public class TestCase {
 	 */
 	@Before
 	public void setUp() throws Exception {
-		System.out.println("setUp");
 	}
 
 	/**
@@ -46,18 +47,12 @@ public class TestCase {
 	 */
 	@After
 	public void tearDown() throws Exception {
-		System.out.println("tearDown");
 	}
 
 	@Test
 	public void test() {
 		//fail("Not yet implemented");
-		System.out.println("test method 1");
-	}
-	@Test
-	public void test2() {
-		//fail("Not yet implemented");
-		System.out.println("test method 2");
+		System.out.println("testing TestSuite");
 	}
 
 }
