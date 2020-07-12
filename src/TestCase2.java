@@ -15,7 +15,8 @@ import org.junit.Test;
  *
  */
 public class TestCase2 {
-
+	int num;
+	String temp,str;
 	/**
 	 * @throws java.lang.Exception
 	 */
@@ -35,6 +36,9 @@ public class TestCase2 {
 	 */
 	@Before
 	public void setUp() throws Exception {
+		num=5;
+ 		temp=null;
+ 		str="Junit is working!!";
 	}
 
 	/**
@@ -48,6 +52,11 @@ public class TestCase2 {
 	public void test() {
 		//fail("Not yet implemented");
 		System.out.println("test method on TestCase 2");
+		assertEquals(5,num);
+ 	    assertFalse(num>6);
+ 	    assertNotNull(str);
+ 	    assertNull(temp);
+ 	    assertTrue(num==5);
 	}
 
 }
