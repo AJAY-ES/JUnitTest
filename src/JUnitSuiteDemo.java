@@ -19,7 +19,7 @@ import org.junit.runners.Suite.SuiteClasses;
  */
 @RunWith(Suite.class)
 @SuiteClasses({TestCase1.class,TestCase2.class})
-public class JUnitSuite {
+public class JUnitSuiteDemo {
 
 	/**
 	 * @throws java.lang.Exception

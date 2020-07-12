@@ -47,7 +47,7 @@ public class TestCase2 {
 	@Test
 	public void test() {
 		//fail("Not yet implemented");
-		System.out.print("test method on TestCase 2");
+		System.out.println("test method on TestCase 2");
 	}
 
 }
