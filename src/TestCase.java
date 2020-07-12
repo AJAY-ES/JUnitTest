@@ -21,6 +21,7 @@ public class TestCase {
 	 */
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
+		System.out.println("setUpBeforeClass");
 	}
 
 	/**
@@ -28,6 +29,8 @@ public class TestCase {
 	 */
 	@AfterClass
 	public static void tearDownAfterClass() throws Exception {
+		System.out.println("tearDownAfterClass");
+	 
 	}
 
 	/**
@@ -35,6 +38,7 @@ public class TestCase {
 	 */
 	@Before
 	public void setUp() throws Exception {
+		System.out.println("setUp");
 	}
 
 	/**
@@ -42,12 +46,18 @@ public class TestCase {
 	 */
 	@After
 	public void tearDown() throws Exception {
+		System.out.println("tearDown");
 	}
 
 	@Test
 	public void test() {
 		//fail("Not yet implemented");
-		System.out.println("Welcome to Junit Testing!!");
+		System.out.println("test method 1");
+	}
+	@Test
+	public void test2() {
+		//fail("Not yet implemented");
+		System.out.println("test method 2");
 	}
 
 }
